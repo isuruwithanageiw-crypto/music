@@ -1,0 +1,151 @@
+﻿Flutter bootstrap directory: 
+C:\Users\DINITHI\AppData\Local\Temp\flet_flutter_build_0HPaulhJ0T
+Additional Flutter dependencies:
+{}
+Creating Flutter bootstrap project...OK
+Customizing app icons and splash images...OK
+Generating app icons...
+Run subprocess: ['C:\\src\\flutter\\bin\\dart.BAT', 'run', 
+'flutter_launcher_icons']
+  ════════════════════════════════════════════
+     FLUTTER LAUNCHER ICONS (v0.13.1)                               
+  ════════════════════════════════════════════
+  
+• Creating default icons Android
+• Overwriting the default Android launcher icon with a new icon
+• Overwriting default iOS launcher icon with new icon
+Creating Icons for Web...
+Creating Icons for Windows...
+Creating Icons for MacOS...
+
+✓ Successfully generated launcher icons
+OK
+Generating splash screens...
+Run subprocess: ['C:\\src\\flutter\\bin\\dart.BAT', 'run', 
+'flutter_native_splash:create']
+[Android] Creating default splash images
+[Android] Creating dark mode splash images
+[Android] Creating default android12splash images
+[Android] Creating dark mode android12splash images
+[Android] Updating launch background(s) with splash image path...
+[Android]  - android/app/src/main/res/drawable/launch_background.xml
+[Android]  - android/app/src/main/res/drawable-night/launch_background.xml
+[Android]  - android/app/src/main/res/drawable-v21/launch_background.xml
+[Android]  - android/app/src/main/res/drawable-night-v21/launch_background.xml
+[Android] Updating styles...
+[Android]  - android/app/src/main/res/values-v31/styles.xml
+[Android] No android/app/src/main/res/values-v31/styles.xml found in your Android project
+[Android] Creating android/app/src/main/res/values-v31/styles.xml and adding it to your Android project
+[Android]  - android/app/src/main/res/values-night-v31/styles.xml
+[Android] No android/app/src/main/res/values-night-v31/styles.xml found in your Android project
+[Android] Creating android/app/src/main/res/values-night-v31/styles.xml and adding it to your Android project
+[Android]  - android/app/src/main/res/values/styles.xml
+[Android]  - android/app/src/main/res/values-night/styles.xml
+[iOS] Creating  images
+[iOS] Creating dark mode  images
+[iOS] Updating ios/Runner/Info.plist for status bar hidden/visible
+[Web] Creating images
+[Web] Creating images
+[Web] Creating background images
+[Web] Creating CSS
+[Web] Updating index.html
+
+✅ Native splash complete.
+Now go finish building something awesome! 💪 You rock! 🤘🤩
+Like the package? Please give it a 👍 here: https://pub.dev/packages/flutter_native_splash
+
+OK
+Packaging Python app...
+Run subprocess: ['C:\\src\\flutter\\bin\\dart.BAT', 'run', 
+'serious_python:main', 'package', 'C:\\Users\\DINITHI\\Desktop\\mobi 
+app\\aura_music_flet', '--mobile', '--platform', 'mobile', '--dep-mappings', 
+'flet=flet-embed', '--req-deps', 'flet-embed', '--exclude', 'build']
+Running build hooks...Running build hooks...Running package command
+Creating asset directory: C:\Users\DINITHI\AppData\Local\Temp\flet_flutter_build_0HPaulhJ0T\app
+Copying Python app from C:\Users\DINITHI\Desktop\mobi app\aura_music_flet to C:\Users\DINITHI\AppData\Local\Temp\serious_python_tempede7dd97
+Configured mobile platform with sitecustomize.py at C:\Users\DINITHI\AppData\Local\Temp\serious_python_sitecustomize57f42ac2\sitecustomize.py
+Installing dependencies [flet-embed==0.21.2, ytmusicapi, yt-dlp] with pip command to C:\Users\DINITHI\AppData\Local\Temp\serious_python_tempede7dd97\__pypackages__
+Downloading Python distributive from https://github.com/indygreg/python-build-standalone/releases/download/20231002/cpython-3.11.6+20231002-x86_64-pc-windows-msvc-shared-install_only.tar.gz to C:\Users\DINITHI\AppData\Local\Temp\cpython-3.11.6+20231002-x86_64-pc-windows-msvc-shared-install_only.tar.gz
+Extracting Python distributive from C:\Users\DINITHI\AppData\Local\Temp\cpython-3.11.6+20231002-x86_64-pc-windows-msvc-shared-install_only.tar.gz to C:\Users\DINITHI\AppData\Local\Temp\hostpython3.11_188cd468
+Compiling Python sources at C:\Users\DINITHI\AppData\Local\Temp\serious_python_tempede7dd97
+Delete unnecessary files with extensions: [.py, .c, .h, .typed, .exe, .so, .a, .pdb, .pyd, .dll]
+Delete unnecessary files and directories: [__pycache__, bin]
+Creating app archive at C:\Users\DINITHI\AppData\Local\Temp\flet_flutter_build_0HPaulhJ0T\app/app.zip from C:\Users\DINITHI\AppData\Local\Temp\serious_python_tempede7dd97
+Deleting temp directory C:\Users\DINITHI\AppData\Local\Temp\serious_python_tempede7dd97
+Deleting sitecustomize directory C:\Users\DINITHI\AppData\Local\Temp\serious_python_sitecustomize57f42ac2
+Deleting Python directory C:\Users\DINITHI\AppData\Local\Temp\hostpython3.11_188cd468
+OK
+Building .apk for Android...
+Run subprocess: ['C:\\src\\flutter\\bin\\flutter.BAT', 'build', 'apk']
+Resolving dependencies...
+Downloading packages...
+  archive 3.6.1 (4.0.9 available)
+  file_picker 6.2.1 (10.3.10 available)
+  fl_chart 0.65.0 (1.2.0 available)
+  flet 0.21.2 (0.82.2 available)
+  flutter_launcher_icons 0.13.1 (0.14.4 available)
+  flutter_lints 2.0.3 (6.0.0 available)
+  flutter_markdown 0.6.23 (0.7.7+1 available)
+  flutter_native_splash 2.4.4 (2.4.7 available)
+  image 4.3.0 (4.8.0 available)
+  js 0.6.7 (0.7.2 available)
+  lints 2.1.1 (6.1.0 available)
+  meta 1.17.0 (1.18.2 available)
+  package_info_plus 8.3.1 (9.0.0 available)
+  petitparser 6.1.0 (7.0.2 available)
+  screen_retriever 0.1.9 (0.2.0 available)
+  sensors_plus 4.0.2 (7.0.0 available)
+  sensors_plus_platform_interface 1.2.0 (2.0.1 available)
+  serious_python 0.7.1 (0.9.11 available)
+  serious_python_android 0.7.1 (0.9.11 available)
+  serious_python_darwin 0.7.1 (0.9.11 available)
+  serious_python_linux 0.7.1 (0.9.11 available)
+  serious_python_platform_interface 0.7.1 (0.9.11 available)
+  serious_python_windows 0.7.1 (0.9.11 available)
+  test_api 0.7.10 (0.7.11 available)
+  toml 0.15.0 (0.18.0 available)
+  url_strategy 0.2.0 (discontinued)
+  vector_math 2.2.0 (2.3.0 available)
+  web 0.5.1 (1.1.1 available)
+  web_socket_channel 2.4.5 (3.0.3 available)
+  win32 5.15.0 (6.0.0 available)
+  window_manager 0.3.9 (0.5.1 available)
+  xml 6.5.0 (6.6.1 available)
+Got dependencies!
+1 package is discontinued.
+32 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+flet.exe : Package file_picker:linux references file_picker:linux as the default plugin, but it does not provide an 
+inline implementation.
+At line:21 char:1
++ & $fletExe build apk --verbose > build_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Package file_pi...implementation.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: linux: 
+default_package: file_picker` or add an inline implementation to file_picker via `platforms: linux:` `pluginClass` or 
+`dartPluginClass`.
+
+Package file_picker:macos references file_picker:macos as the default plugin, but it does not provide an inline 
+implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: macos: 
+default_package: file_picker` or add an inline implementation to file_picker via `platforms: macos:` `pluginClass` or 
+`dartPluginClass`.
+
+Package file_picker:windows references file_picker:windows as the default plugin, but it does not provide an inline 
+implementation.
+Ask the maintainers of file_picker to either avoid referencing a default implementation via `platforms: windows: 
+default_package: file_picker` or add an inline implementation to file_picker via `platforms: windows:` `pluginClass` 
+or `dartPluginClass`.
+
+Building with plugins requires symlink support.
+
+Please enable Developer Mode in your system settings. Run
+  start ms-settings:developers
+to open settings.
+Deleting Flutter bootstrap directory 
+C:\Users\DINITHI\AppData\Local\Temp\flet_flutter_build_0HPaulhJ0T
+
+Run subprocess: ['C:\\src\\flutter\\bin\\flutter.BAT', '--version']
+Error building Flet app - see the log of failed command above.

@@ -33,7 +33,7 @@ jobs:
       - name: Build Android APK
         run: |
           mkdir -p assets
-          python -m flet build apk
+          flet build apk
 
       - name: Upload Finished APK
         uses: actions/upload-artifact@v4

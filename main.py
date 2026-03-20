@@ -318,9 +318,9 @@ def main(page: ft.Page):
             import threading
             def load_and_play():
                 nonlocal is_playing, up_next_queue
-                filename = yt_service.download_song(song['id'])
-                if filename:
-                    audio.src = filename
+                url = yt_service.get_song_url(song['id'])
+                if url:
+                    audio.src = url
                     audio.play()
                     is_playing = True
                     
@@ -384,9 +384,5 @@ if __name__ == "__main__":
     print(f"To play on your MOBILE, open Safari/Chrome and type:")
     print(f"👉 http://{LOCAL_IP}:8550 👈")
     print("="*50 + "\n")
-    import os
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    assets_dir = os.path.join(base_dir, "assets")
-    os.makedirs(assets_dir, exist_ok=True)
     
-    ft.app(target=main, view=ft.AppView.WEB_BROWSER, host="0.0.0.0", port=8550, assets_dir="assets")
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER, host="0.0.0.0", port=8550)

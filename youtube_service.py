@@ -1,5 +1,5 @@
 from ytmusicapi import YTMusic
-import yt_dlp
+from pytubefix import YouTube
 import threading
 
 class YouTubeMusicService:
@@ -31,31 +31,15 @@ class YouTubeMusicService:
             print(f"Error searching: {e}")
             return []
 
-    def download_song(self, video_id):
+    def get_song_url(self, video_id):
         try:
-            import os
-            
-            # Use absolute paths specifically to avoid any CWD/Windows WinError 5 issues
-            base_dir = os.path.dirname(os.path.abspath(__file__))
-            assets_dir = os.path.join(base_dir, "assets")
-            os.makedirs(assets_dir, exist_ok=True)
-            
-            # Check if M4A file exists
-            if os.path.exists(os.path.join(assets_dir, f"{video_id}.m4a")):
-                return f"{video_id}.m4a"
-
-            ydl_opts = {
-                'format': '140', # 140 guarantees native AAC `.m4a` file without FFmpeg
-                'paths': {'home': assets_dir},
-                'outtmpl': {'default': f'{video_id}.m4a'},
-                'quiet': True,
-                'no_warnings': True,
-            }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.extract_info(f"https://www.youtube.com/watch?v={video_id}", download=True)
-                return f"{video_id}.m4a"
+            yt = YouTube(f"https://www.youtube.com/watch?v={video_id}")
+            audio_stream = yt.streams.get_audio_only()
+            if audio_stream:
+                return audio_stream.url
+            return None
         except Exception as e:
-            print(f"Download Error: {e}")
+            print(f"URL Fetch Error: {e}")
             return None
 
     def get_search_suggestions(self, query):

@@ -1,21 +1,7 @@
 import flet as ft
 from youtube_service import YouTubeMusicService
 import threading
-import socket
 
-# Setup Local IP
-def get_local_ip():
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    try:
-        s.connect(("8.8.8.8", 80))
-        ip = s.getsockname()[0]
-    except:
-        ip = "127.0.0.1"
-    finally:
-        s.close()
-    return ip
-
-LOCAL_IP = get_local_ip()
 
 def format_time(ms):
     if not ms: return "0:00"
@@ -379,10 +365,4 @@ def main(page: ft.Page):
     page.update()
 
 if __name__ == "__main__":
-    print("\n" + "="*50)
-    print(f"🔥 AURA MUSIC IS RUNNING! 🔥")
-    print(f"To play on your MOBILE, open Safari/Chrome and type:")
-    print(f"👉 http://{LOCAL_IP}:8550 👈")
-    print("="*50 + "\n")
-    
-    ft.app(target=main, view=ft.AppView.WEB_BROWSER, host="0.0.0.0", port=8550)
+    ft.app(main)

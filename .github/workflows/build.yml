@@ -30,7 +30,7 @@ jobs:
       - name: Build Android APK
         run: |
           mkdir -p assets
-          flet build apk --project auramusic
+          flet build apk --project "auramusic" --org "com.aura.music" --product "Aura Music" --description "Aura Music Player" -vv
 
       - name: Upload Finished APK
         uses: actions/upload-artifact@v4

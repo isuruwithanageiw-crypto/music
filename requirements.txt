@@ -1,3 +1,7 @@
 flet>=0.24.1
 ytmusicapi
 pytubefix
+certifi
+flet>=0.24.1
+ytmusicapi
+pytubefix
